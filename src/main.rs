@@ -28,6 +28,7 @@ impl<'a> Lexer<'a> {
     }
 
     fn token(&mut self) -> Option<Token> {
+        //https://github.com/hibi221b/iced_practice/tree/master/todo/calc
         //電卓ではスペースの入力はないため空白をスキップする処理は省略
 
         let current = self.curr()?;
